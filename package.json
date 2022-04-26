@@ -1,0 +1,23 @@
+{
+  "name": "project_plan",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "engines": {
+    "node": "12.11.1",
+    "npm": "6.14.8"
+  },
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.7",
+    "mongoose": "^5.12.10",
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

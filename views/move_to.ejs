@@ -1,0 +1,23 @@
+<%- include("partials/header"); -%>
+
+      <div class="container2">
+        <h2>Bucket move</h2>
+        <form action=" " method = "POST">
+         
+          <div class="form-group">
+
+            <label for="pwd">Move to </label>
+            <select class="form-control" id="category" name = "category">
+              <option class="form-control" value="Default">Default</option>
+              <% for(var i = 0 ; i < result.length ; i++){ %>
+                <option class="form-control" value="<%= result[i].name%>"><%= result[i].name %></option>
+                <% } %>
+
+            </select>
+
+           
+          </div>
+          <input type="submit" class="btn btn-primary" value = 'Move'/>
+        </form>
+      </div>
+    

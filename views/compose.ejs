@@ -1,0 +1,29 @@
+<%- include("partials/header"); -%>
+
+      <div class="container2">
+        <h2>Compose</h2>
+        <form action=" " method = "POST">
+          <div class="form-group">
+            <label for="email">Title</label>
+            <input type="text" class="form-control" id="title"  name="title">
+          </div>
+          <div class="form-group">
+
+            <label for="pwd">Category</label>
+            <select class="form-control" id="category" name = "category">
+            
+              <% for(var i = 0 ; i < result.length ; i++){ %>
+                <option class="form-control" value="<%= result[i].name%>"><%= result[i].name %></option>
+                <% } %>
+
+            </select><br>
+
+            <label for="pwd">Post</label>
+            <textarea class="form-control" rows="6" id="content" name = "content"></textarea>
+
+            
+          </div>
+          <input type="submit" class="btn btn-primary" value = 'Add Post'/>
+        </form>
+      </div>
+    

@@ -1,0 +1,17 @@
+<%- include("partials/header"); -%>
+
+      <div class="container2">
+        <h2>Edit</h2>
+        <form action=" " method = "POST">
+          <div class="form-group">
+            <label for="email">Title</label>
+            <input type="text" class="form-control" id="title"  name="title" value = '<%= title %>' >
+          </div>
+          <div class="form-group">
+            <label for="pwd">Content</label>
+            <textarea class="form-control" rows="6" id="content" name = "content"><%= content %></textarea>
+          </div>
+          <input type="submit" class="btn btn-primary" value = 'Edit Highlight'/>
+        </form>
+      </div>
+      

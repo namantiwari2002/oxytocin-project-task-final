@@ -1,0 +1,31 @@
+<%- include("partials/header"); -%>
+
+<div class="container2">
+    <h2>Group move</h2>
+    <form action=" " method = "POST">
+     
+      <div class="form-group">
+
+        <label for="pwd"> Select bucket </label>
+        <select class="form-control" id="category" name = "category">
+         
+          <% for(var i = 0 ; i < categories.length ; i++){ %>
+            <option class="form-control" value="<%= categories[i].name%>"><%= categories[i].name %></option>
+            <% } %>
+
+        </select>
+
+        <br>
+        <label for="pwd">Select highlights</label><br>
+
+        <% for(var i = 0 ; i < data.length ; i++){ %>
+            <input  class="form-check-input" type="checkbox" name="blogs" id="blogs"  value="<%= data[i]._id%>"> <%= data[i].title %> <br>
+            <% } %>
+
+
+       
+      </div>
+      <input type="submit" class="btn btn-primary" value = 'Move'/>
+    </form>
+  </div>
+
